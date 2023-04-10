@@ -77,7 +77,7 @@ function getWords(letter) {
     return JapaneseFoods;
   } else if (letter === "India") {
     return IndianFoods;
-  } else if (letter === "US") {
+  } else if (letter === "United States") {
     return AmericanFoods;
   } else {
     return ["please select a country"];
