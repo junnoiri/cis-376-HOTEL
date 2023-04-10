@@ -18,10 +18,6 @@ $(function () {
   $("#submitForm").on("click", (e) => {
     e.preventDefault();
 
-    console.log("clicked the button");
-
-    // get data from an input
-
     let dataStuff = `{ "letterSelected:" " ${$(
       "input[type=radio]:checked"
     ).val()} " }`;
