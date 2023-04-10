@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOTEL-lab</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-name"><h1>HOTEL CONTACT FORM</h1></div>
+      <nav class="nav-lists">
+        <ul>
+          <li>
+            <a href="https://github.com/junnoiri/cis-376-HOTEL" target="_blank">See the Code</a>
+          </li>
+          <li>
+            <a
+              href="https://gist.github.com/barrycumbie/892372aa45634b0a28b7354ea076bac6"
+              >Story Card</a target="_blank"
+            >
+          </li>
+          <li><a href="https://validator.w3.org/nu/" target="_blank">Validity Checker</a></li>
+        </ul>
+        <div class="hamburger-menu">
+          <div class="hamburger-bar"></div>
+          <div class="hamburger-bar"></div>
+          <div class="hamburger-bar"></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h1 class="text-center my-5">Give me your idea!!</h1>
+            <form action="#" method="POST">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="Food" class="form-label"
+                  >What is your favorite country's food?</label
+                >
+                <div class="form-check">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="radio1"
+                    name="optradio"
+                    value="Italy"
+                  />Italy
+                  <label class="form-check-label" for="radio1"></label>
+                </div>
+                <div class="form-check">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="radio2"
+                    name="optradio"
+                    value="France"
+                  />France
+                  <label class="form-check-label" for="radio2"></label>
+                </div>
+                <div class="form-check">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="radio2"
+                    name="optradio"
+                    value="Spain"
+                  />Spain
+                  <label class="form-check-label" for="radio2"></label>
+                </div>
+                <div class="form-check">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="radio2"
+                    name="optradio"
+                    value="Japan"
+                  />Japan
+                  <label class="form-check-label" for="radio2"></label>
+                </div>
+                <div class="form-check">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="radio2"
+                    name="optradio"
+                    value="India"
+                  />India
+                  <label class="form-check-label" for="radio2"></label>
+                </div>
+                <div class="form-check">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="radio2"
+                    name="optradio"
+                    value="US
+                    "
+                  />United States
+                  <label class="form-check-label" for="radio2"></label>
+                </div>
+                <select
+                  id="letterWordsSelect"
+                  class="form-select"
+                  aria-label="Default select example"
+                >
+                  <option selected disabled>
+                    Please select one country from above
+                  </option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Please tell me why you like the food</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p class="copyright">&copy; 2023 Junnosuke Noiri. All rights reserved.</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/contact.js"></script>
+  </body>
+</html>
