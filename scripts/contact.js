@@ -2,35 +2,23 @@
 // and displays the options in the dropdown menu according to that value
 $(function () {
   $("input[type=radio]").on("change", function () {
-    // Call function
     let radioChoice = $("input[type=radio]:checked").val();
-    let newWordList = getWords(radioChoice);
-    console.log(newWordList);
+    let foodArray = getValue(radioChoice);
+    console.log(foodArray);
 
     let optionList = "";
 
-    for (i = 0; i < newWordList.length; i++) {
-      optionList += `<option value=" ${newWordList[i]} ">${newWordList[i]} </option>`;
+    for (i = 0; i < foodArray.length; i++) {
+      optionList += `<option value=" ${foodArray[i]} ">${foodArray[i]} </option>`;
     }
     console.log(optionList);
 
-    $("#letterWordsSelect").empty().append(optionList);
-  });
-
-  // to check that the submit button works
-  $("#submitForm").on("click", (e) => {
-    e.preventDefault();
-
-    let dataStuff = `{ "letterSelected:" " ${$(
-      "input[type=radio]:checked"
-    ).val()} " }`;
-
-    console.log(dataStuff);
+    $("#foodOption").empty().append(optionList);
   });
 });
 
 // The function to check the letter
-function getWords(letter) {
+function getValue(letter) {
   // Data array
   let ItalianFoods = ["Pizza", "Pasta", "Lasagna", "Gelato", "Carbonara"];
 
