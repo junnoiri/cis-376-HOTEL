@@ -1,3 +1,4 @@
+// To open and close hamburger menu
 const hamburgerMenu = document.querySelector(".hamburger-menu");
 const navList = document.querySelector("nav ul");
 let menuOpen = false;

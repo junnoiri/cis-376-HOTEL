@@ -1,3 +1,5 @@
+// The function that retrieves the value from a radio button
+// and displays the options in the dropdown menu according to that value
 $(function () {
   $("input[type=radio]").on("change", function () {
     // Call function
@@ -15,6 +17,7 @@ $(function () {
     $("#letterWordsSelect").empty().append(optionList);
   });
 
+  // to check that the submit button works
   $("#submitForm").on("click", (e) => {
     e.preventDefault();
 
@@ -26,10 +29,11 @@ $(function () {
   });
 });
 
+// The function to check the letter
 function getWords(letter) {
-  console.log("in f/n getWords, here the paramter: ", letter);
-
+  // Data array
   let ItalianFoods = ["Pizza", "Pasta", "Lasagna", "Gelato", "Carbonara"];
+
   let FrenchFoods = [
     "Macarons",
     "Croissants",
@@ -63,6 +67,7 @@ function getWords(letter) {
     "Mashed potatoes",
   ];
 
+  // if function to check the letter
   if (letter === "Italy") {
     return ItalianFoods;
   } else if (letter === "France") {
